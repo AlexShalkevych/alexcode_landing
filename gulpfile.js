@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require("gulp-rename");
+// const autoprefixer = require('gulp-autoprefixer');
 
             /*Server*/
 
@@ -63,17 +64,17 @@ gulp.task('clean', function del(cb) {
             /* Copy fonts  */
 
 gulp.task('copy:fonts', function () {
-    return gulp.src('/source/fonts/**/*.*')
+    return gulp.src('./source/fonts/**/*.*')
         .pipe(gulp.dest('build/fonts'));
 })
 
 
             /* Copy images  */
 
-gulp.task('copy:images', function () {
-    return gulp.src('/source/images/**/*.*')
-    .pipe(gulp.dest('build/images'));
-})
+gulp.task('copy:images', function() {
+    return gulp.src('./source/images/**/*.*')
+        .pipe(gulp.dest('build/images'));
+});
 
                 /* Copy */
 
@@ -91,3 +92,4 @@ gulp.task('default', gulp.series(
     gulp.parallel('template:compile', 'styles:compile', 'sprite', 'copy'),
     gulp.parallel('watch', 'server')
 ));
+

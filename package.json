@@ -4,7 +4,8 @@
   "description": "This is first real landing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,17 @@
   },
   "homepage": "https://github.com/AlexShalkevych/alexcode_landing#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.18.8",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-pug": "^4.0.1",
+    "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
-    "gulp.spritesmith": "^6.9.0",
-    "rimraf": "^2.6.2"
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.3.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "fontawesome5-webfont": "^5.0.4",
+    "normalize.scss": "^0.1.0"
   }
 }

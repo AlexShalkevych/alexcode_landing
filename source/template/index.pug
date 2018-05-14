@@ -1,9 +1,10 @@
 doctype html
-html
+html(lang='ru')
     head
-    meta(charset = 'utf-8')
-    meta(name='viewport', content="initial-scale=1.0, width=device-width")
-    title Webpack app
-    link(rel='stylesheet', href='css/main.min.css')
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content="IE=edge")
+        meta(name='viewport' content='width=device-width')
+        link(rel="stylesheet" href="css/main.min.css")
+        title Business
     body
-        h1 test pug
+        include sections/header
