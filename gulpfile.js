@@ -43,14 +43,14 @@ gulp.task('styles:compile', function () {
             /* Sprites */
 
 gulp.task('sprite', function (cb) {
-    const spriteData = gulp.src('images/*.png').pipe(spritesmith({
+    const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
         imgPath: '../images/sprite.png',
         cssName: 'sprite.scss'
     }));
 
     spriteData.img.pipe(gulp.dest('build/images/'));
-    spriteData.css.pipe(gulp.dest('source/style/global/'));
+    spriteData.css.pipe(gulp.dest('source/styles/global/'));
 
     cb();
 });
