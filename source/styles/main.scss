@@ -1,8 +1,10 @@
 @import "../../node_modules/font-awesome/scss/font-awesome";
-@import "../../node_modules/fontawesome5-webfont/scss/fontawesome";
-@import "../../node_modules/fontawesome5-webfont/scss/fa-brands";
-@import "../../node_modules/fontawesome5-webfont/scss/fa-regular";
-@import "../../node_modules/fontawesome5-webfont/scss/fa-solid";
+
+/*----------FONTAWESOME 5.0------------*/
+//@import "../../node_modules/fontawesome5-webfont/scss/fontawesome";
+//@import "../../node_modules/fontawesome5-webfont/scss/fa-brands";
+//@import "../../node_modules/fontawesome5-webfont/scss/fa-regular";
+//@import "../../node_modules/fontawesome5-webfont/scss/fa-solid";
 @import "../../node_modules/normalize.scss/normalize";
 
 @import "global/mixins";
@@ -21,6 +23,7 @@
 @import "sections/about";
 @import "sections/approach";
 @import "sections/work";
+@import "sections/form";
 
 
 
