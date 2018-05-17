@@ -1,5 +1,4 @@
 .header {
-
   &__top {
     background-color: #f0f2f4;
     border-bottom: 1px solid #e2e2e2;
@@ -11,12 +10,22 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 41px 0 32px;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      margin-left: 0;
+    }
+
+    .button {
+      @media (max-width: 1080px) {
+        margin-right: 15px;
+      }
+    }
   }
 }
 
 .contacts {
   text-align: right;
-
 }
 
 .contact {
@@ -54,5 +63,16 @@
   border-radius: 3px;
   background-color: #1287bf;
   color: #fff;
+}
+
+.logo {
+  @media (max-width: 1080px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 1000px) {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 }
 

@@ -1,6 +1,4 @@
-///*--------------Vars icons---------*/
-
-- var linkItems = ['facebook', 'twitter', 'google-plus', 'linkedin'];
+- var linkItems = ['facebook-official', 'twitter', 'google-plus', 'linkedin'];
 - var linkUrls = ['facebook.com', 'twitter.com', 'google.com', 'linkedin.com'];
 
 footer.footer
@@ -8,8 +6,6 @@ footer.footer
         .container
             .footer__title Get in touch
             .footer__links
-                ///*--------------Iteration icons---------*/
-
                 each item, key in linkItems
                     a.footer__social(href="https://" + linkUrls[key] target="_blank")
                         i(class="fa fa-" + item aria-hidden="true")
