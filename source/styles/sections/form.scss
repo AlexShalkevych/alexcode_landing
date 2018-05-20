@@ -31,6 +31,8 @@
   .arrow-down {
     @include centerer-xy();
 
+    padding: 12px 20px;
+    color: #fff;
     .fa {
       font-size: 2.5rem;
     }
@@ -103,6 +105,10 @@
     border: 1px solid #d8d8d8;
     border-radius: 3px;
     font-size: 0.875rem;
+
+    @media (max-width: 500px) {
+      width: 95%;
+    }
 
     &:focus {
       box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
