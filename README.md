@@ -1,19 +1,19 @@
 # Start the project
 
-Cloning of the repository:
+*Clone the repository:
 
 > git clone https://github.com/AlexShalkevych/alexcode_landing.git
 
 
-## Before starting the project, need to install:
+## Prerequisite:
 
 > node
 
-## After installing the packages from the project:
+## Install dependecies:
 
 > npm install
 
-## After running the project:
+## Serve the application:
 
 > npm start
 
